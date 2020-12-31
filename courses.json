@@ -1,0 +1,139 @@
+{
+    "data": [
+        {
+            "semester": 1,
+            "courses": [
+                {
+                    "name": "Mathematik 1",
+                    "english-name": "Mathmatics 1",
+                    "description": ""
+                },
+                {
+                    "name": "Programmieren 1",
+                    "english-name": "Programming 1",
+                    "description": ""
+                },
+                {
+                    "name": "Einführung in die Medizin 1",
+                    "english-name": "Introduction to medicine 1",
+                    "description": ""
+                },
+                {
+                    "name": "Technische Grundlagen der Informatik 1",
+                    "english-name": "Technological basics of Informatics",
+                    "description": ""
+                },
+                {
+                    "name": "Medizinische Informationssysteme",
+                    "english-name": "Clinical Information Systems",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "semester": 2,
+            "courses": [
+                {
+                    "name": "Mathematik 2",
+                    "english-name": "Mathmatics 2",
+                    "description": ""
+                },
+                {
+                    "name": "Programmieren 2",
+                    "english-name": "Programming 2",
+                    "description": ""
+                },
+                {
+                    "name": "Einführung in die Medizin 2",
+                    "english-name": "Introduction to medicine 2",
+                    "description": ""
+                },
+                {
+                    "name": "Theoretische Informatik",
+                    "english-name": "Theory of Informatics",
+                    "description": ""
+                },
+                {
+                    "name": "Patentanmeldung und Patentrecht",
+                    "english-name": "Patent registration and patent law",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "semester": 3,
+            "courses": [
+                {
+                    "name": "Software Engineering",
+                    "english-name": "Software engineering",
+                    "description": ""
+                },
+                {
+                    "name": "Algorithmen und Datenstrukturen",
+                    "english-name": "Alogithms and Datastructures",
+                    "description": ""
+                },
+                {
+                    "name": "Kommunikationssysteme",
+                    "english-name": "Communication systems",
+                    "description": ""
+                },
+                {
+                    "name": "Physik",
+                    "english-name": "Physics",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "semester": 4,
+            "courses": [
+                {
+                    "name": "Datenbanken",
+                    "english-name": "Databases",
+                    "description": ""
+                },
+                {
+                    "name": "Betriebssysteme",
+                    "english-name": "Operating systems",
+                    "description": ""
+                },
+                {
+                    "name": "Medizinische Bildverarbeitung",
+                    "english-name": "Medical Image Processing",
+                    "description": ""
+                },
+                {
+                    "name": "Biometrie",
+                    "english-name": "Statistics",
+                    "description": ""
+                },
+                {
+                    "name": "Softwareprojekt",
+                    "english-name": "Software project",
+                    "description": ""
+                },
+                {
+                    "name": "Medizinische Dokumentation",
+                    "english-name": "Clinical Documentation",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "semester": 5,
+            "courses": [
+                {
+                    "name": "Medizinrecht",
+                    "english-name": "Medical Law",
+                    "description": ""
+                },
+                {
+                    "name": "Praktikum",
+                    "english-name": "Internship",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}
