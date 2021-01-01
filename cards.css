@@ -1,11 +1,33 @@
 .my_card {
-    background-color:aquamarine;
+    min-height: 20vh;
+    border-radius: 5px;
+
+}
+
+.display-box{
+    color: rgb(97, 97, 97);
+    height: 100vh;
+}
+
+.glassmorphism {
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 
 h2 {
-    font-size: 12px;
+    font-size: 150%;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
 html {
     width: 100%;
+}
+
+body {
+    background: radial-gradient(ellipse at top, lightblue, transparent),
+                radial-gradient(ellipse at bottom, orange, white);
 }
