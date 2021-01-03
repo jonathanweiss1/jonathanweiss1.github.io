@@ -11,12 +11,12 @@
                 {
                     "name": "Programmieren 1",
                     "english-name": "Programming 1",
-                    "description": ""
+                    "description": "Erlernen der Programmiersprache C und der folgenden Konzepte: <ul>\n<li>Problemanalyse und Algorithmusnotation</li>\n<li>Ausdrücke, Operatoren, Operanden</li>\n<li>Variablen und Datentypen, Arrays und Zeiger</li>\n, <li>Kontrollstrukturen</li>\n<li>Funktionen</li>\n<li>elementare und Rekursive Datenstrukturen: u.a.: verkettete Listen, doppelt verkettete Listen</li>\n<li>Iteration und Rekursion</li>\n<li>dynamische und statische Speicherverwaltung</li>\n<li>Modularisierung</li>\n</ul>"
                 },
                 {
                     "name": "Einführung in die Medizin 1",
                     "english-name": "Introduction to medicine 1",
-                    "description": ""
+                    "description": "<ul>\nAllgemeine Einführung in die folgenden Bereiche:\n<li>Medizinische Terminologie an praktischen Beispielen</li>\n<li>Anatomie an praktischen Beispielen</li>\n<li>Physiologie an praktischen Beispielen</li>\n<li>Vorstellung medizinischer Fachgebiete</li>\n\nDurch ein Kurzpraktikum am Regensburger Uniklinikum kann hier ein Einblick in den Alltag des medizinischen Fachpersonals gewonnen werden.\n</ul>"
                 },
                 {
                     "name": "Technische Grundlagen der Informatik 1",
@@ -26,7 +26,7 @@
                 {
                     "name": "Medizinische Informationssysteme",
                     "english-name": "Clinical Information Systems",
-                    "description": ""
+                    "description": "<ul>\n<li>Aufbau und Organisationsstruktur von Krankenhäusern, Integrierte Versorgungskonzepte im Gesundheitswesen und die sich daraus ergebenden Anforderungen an die IT-Infrastruktur und Informationssysteme</li>\n<li>Krankenhausinformationssysteme: Modellierung von Krankenhausinformationssystemen, Referenzmodelle</li>\n<li>Struktur und Komponenten von Krankenhausinformationssystemen</li>\n<li>Kommunikationsstandards in der medizinischen Informatik</li>\n<li>Konzepte zur Administration von Krankenhausinformationssystemen</li>\n<li>Praxisinformationssysteme</li>\n<li>Medizinische Wissensrecherche</li>\n<li>Strukturierte Wissenserfassung</li>\n</ul>"
                 }
             ]
         },
@@ -36,17 +36,17 @@
                 {
                     "name": "Mathematik 2",
                     "english-name": "Mathmatics 2",
-                    "description": ""
+                    "description": "Analysis:\n<ul>\n<li>Folgen und Reihen: u.a. Konvergenzbegriffe und -kriterien für Folgen und Reihen, Funktionenreihen</li>\n<li>Stetigkeit: u.a.: Stetigkeitsbegriffe, Zwischenwertsatz</li>\n<li>Differentialrechnung: u.a.: Differentiationsregeln, Mittelwertsatz der Differentialrechnung, Extremwerte</li>\n<li>Integralrechnung: u.a.: Riemannsches Integral, Mittelwertsatz der Integralrechnung, Hauptsatz der Differential- und Integralrechnung, Integrationsregeln</li>\n<li>Mehrdimensionale Analysis: u.a.: Grenzwerte und Stetigkeit, Differentierbarkeit, totale und partielle Ableitung, Extremwerte</li>\n</ul>"
                 },
                 {
                     "name": "Programmieren 2",
                     "english-name": "Programming 2",
-                    "description": ""
+                    "description": "Objektorientierung und C++\n<ul>\n<li>Klassen, Objekte, Klassenhierarchien(Einfach- und Mehrfachvererbung)</li>\n<li>Lebenszyklus von Objekten</li>\n<li>Templates, abstrakte Klassen</li>\n<li>Polymorphie</li>\n<li>Einführung in die GUI-Programmierung mit GTK++</li>\n</ul>"
                 },
                 {
                     "name": "Einführung in die Medizin 2",
                     "english-name": "Introduction to medicine 2",
-                    "description": ""
+                    "description": "Vertiefter Einblick in die Bereiche Anatomie und Physiologie an praktischen Beispielen."
                 },
                 {
                     "name": "Theoretische Informatik",
