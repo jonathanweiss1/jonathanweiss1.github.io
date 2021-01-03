@@ -51,10 +51,8 @@
       <!--Description box-->
       <div class="col-md-4 d-flex">
         <div class="w-100 display-box sticky-top pt-2 pb-2 overflow-auto">
-          <div class="glassmorphism w-100">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          <div class="glassmorphism w-100" id="description">
+            Click the Cards to get more info.
           </div>
         </div>
       </div>
@@ -80,11 +78,17 @@
                   if ((courses.length - handled) == 1) {
                     template = $('#template1').html();
                     output = Mustache.render(template, { name: courses[handled].name });
+                    var desc = [courses[handled]["english-name"], courses[handled].description];
+                    sessionStorage.setItem(courses[handled].name, JSON.stringify(desc));
                     ++handled;
                   }
                   else {
                     template = $('#template2').html();
                     output = Mustache.render(template, { name1: courses[handled].name, name2: courses[handled + 1].name });
+                    var desc = [courses[handled]["english-name"], courses[handled].description];
+                    sessionStorage.setItem(courses[handled].name, JSON.stringify(desc));
+                    var desc = [courses[handled + 1]["english-name"], courses[handled + 1].description];
+                    sessionStorage.setItem(courses[handled + 1].name, JSON.stringify(desc));
                     handled += 2;
                   }
                   //add row to grid
@@ -101,6 +105,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

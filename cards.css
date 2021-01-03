@@ -1,12 +1,11 @@
 .my_card {
     min-height: 20vh;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 
 .display-box{
     color: rgb(97, 97, 97);
-    height: 100vh;
 }
 
 .glassmorphism {
@@ -18,7 +17,7 @@
 
 h2 {
     font-size: 150%;
-    color: white;
+    color: rgb(97, 97, 97);
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
 }
