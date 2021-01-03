@@ -6,7 +6,7 @@
                 {
                     "name": "Mathematik 1",
                     "english-name": "Mathmatics 1",
-                    "description": ""
+                    "description": "<ul>\n<li>Grundlagen der Logik: Mengenlehre, Aussagenlogik, Beweismethoden</li>\n<li>Algebraische Strukturen: Relationen, Gruppen, Ringe, Körper</li>\n<li>Lineare Gleichungssysteme: homogen, inhomogen, Gaußsches Eliminationsverfahren</li>\n<li>Vektoren und Matrizen: Linearkombinationen, lineare Unabhängigkeit</li>\n<li>Vektorräume: Unterräume, Basis und Dimensionen, Norm und Skalarprodukt</li>\n<li>Lineare Abbildungen: Bild, Kern, Komposition, orthogonale Abbildungen</li>\n<li>Quadratische Matrizen: Inverse Matrix, Determinante, Hauptachsentransformation</li>\n</ul>"
                 },
                 {
                     "name": "Programmieren 1",
