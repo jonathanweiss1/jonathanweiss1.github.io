@@ -21,7 +21,7 @@
                 {
                     "name": "Technische Grundlagen der Informatik 1",
                     "english-name": "Technological basics of Informatics",
-                    "description": ""
+                    "description": "<ul><li>Technische Umsetzung von Schaltfunktionen und Schaltwerken (Gatter, Speicherelemente)</li>\n<li>Zahlendarstellung: vorzeichenlose, vorzeichenbehaftete Ganzzahlen, Gleitkommazahlen</li>\n<li>Prozessor von außen: Instruktionssatz-Architekturen, Ablauf der Programmübersetzung</li>\n<li>Prozessor von innen: Datenpfad, Kontrollpfad, Architekturkonzepte</li>\n<li>Speicherhierarchie: Hauptspeicher, Cache, Virtueller Speicher, externer Speicher</li>\n<li>besondere Anforderungen an IT im Medizinumfeld: elektrische Sicherheit, Zuverlässigkeit</li>\n</ul>"
                 },
                 {
                     "name": "Medizinische Informationssysteme",
@@ -41,7 +41,7 @@
                 {
                     "name": "Programmieren 2",
                     "english-name": "Programming 2",
-                    "description": "Objektorientierung und C++\n<ul>\n<li>Klassen, Objekte, Klassenhierarchien(Einfach- und Mehrfachvererbung)</li>\n<li>Lebenszyklus von Objekten</li>\n<li>Templates, abstrakte Klassen</li>\n<li>Polymorphie</li>\n<li>Einführung in die GUI-Programmierung mit GTK++</li>\n</ul>"
+                    "description": "Objektorientierung und C++\n<ul>\n<li>Klassen, Objekte, Klassenhierarchien(Einfach- und Mehrfachvererbung)</li>\n<li>Lebenszyklus von Objekten</li>\n<li>Templates, abstrakte Klassen</li>\n<li>Polymorphie</li>\n<li>Einführung in die GUI-Programmierung mit GTK+</li>\n</ul>"
                 },
                 {
                     "name": "Einführung in die Medizin 2",
@@ -51,12 +51,12 @@
                 {
                     "name": "Theoretische Informatik",
                     "english-name": "Theory of Informatics",
-                    "description": ""
+                    "description": "<ul>\n<li>Formale Sprachen und Automatentheorie</li>\n<li>Aphabete, Wörter, Sprachen: Informationsgehalt von Wörtern, Sprachen zur Problembeschreibung (speziell: Entscheidungsprobleme)</li>\n<li>Deterministische und Nichtdeterministische endliche Automaten und deren Äquivalenz, Minimierung von Automaten, Grenzen von endlichen Automaten</li>\n<li>Abschlusseigenschaften regulärer Sprachen</li>\n<li>Grammatiken und Chomsky-Hierarchie</li>\n<li>Berechenbarkeitstheorie</li>\n<li>Mächtigkeit und Abzählbarkeit</li>\n<li>Turingmaschinen und äquivalente Varianten (Mehrband-Turingmaschine, Nichtdeterministische Turingmaschine)</li>\n<li>Kodierung von Turingmaschinen</li>\n<li>Grenzen der Berechenbarkeit: Methode der Diagonalisierung und Methode der Kolmogorov-Komplexität</li>\n<li>Satz von Rice</li>\n<li>Komplexitätstheorie</li>\n<li>Komplexitätsmaße</li>\n<li>Komplexitätsklassen P und NP</li>\n</ul>"
                 },
                 {
                     "name": "Patentanmeldung und Patentrecht",
                     "english-name": "Patent registration and patent law",
-                    "description": ""
+                    "description": "<ul>\n<li>Recherche in Patentdatenbanken</li>\n<li>Deutsches Patentrecht</li>\n<li>Europäisches Patentrecht</li>\n<li>Gültigkeit von Patenten</li>\n<li>Patentanmeldung</li>\n</ul>"
                 }
             ]
         },
@@ -71,7 +71,7 @@
                 {
                     "name": "Algorithmen und Datenstrukturen",
                     "english-name": "Alogithms and Datastructures",
-                    "description": ""
+                    "description": "<ul>\n<li>Komplexitätsanalyse: Modelle zur Laufzeit- und Speicherplatzanalyse, Best-, Average- und Worst-Case Analysen, Komplexitätsklassen, Asymptotische Komplexität</li>\n<li>Entwurfsmethoden: Divide and Conquer, Dynamische Programmierung, Greedy-Algorithmen, Backtracking</li>\n<li>Sortierverfahren: Insertionsort, Bubblesort, Selectionsort, Quicksort, Mergesort, Heapsort, Countsort, Mapsort</li>\n<li>Dynamische Datenstrukturen: Schlangen, Stapel, Listen</li>\n<li>Bäume: Binärbäume, AVL-Bäume, RS-Bäume, B-Bäume, Suchen in Bäumen</li>\n<li>Suchen in Mengen und Zeichenketten: Hashing und Skiplisten</li>\n<li>einfache Graphalgorithmen: Tiefen- und Breitensuche, kürzeste Pfade, minimale Spannbäume(Kruskal, Prim), kürzeste Wege(Dijkstra, Bellman-Ford, APSP, Faster-APSP, Floyd-Warshall)</li>\n<li>Lernalgorithmen: Tabellenbasiertes Lernen(L*-Algorithmus, NL*-Algorithmus)</li>\n</ul>"
                 },
                 {
                     "name": "Kommunikationssysteme",
@@ -96,7 +96,7 @@
                 {
                     "name": "Betriebssysteme",
                     "english-name": "Operating systems",
-                    "description": ""
+                    "description": "<ul>\n<li>Einführung: Historie, Betriebssystem, Schichtenmodell. Schnittstellen, virtuelle Maschinen</li>\n<li>Prozesse: Prozesszustände, Scheduling, Synchronisation, Kommunikation</li>\n<li>Speicherverwaltung: Speicherbelegungsstrategien, virtueller Speicher, Seitenverwaltung, Segmentierung, Cache</li>\n<li>Dateiverwaltung: Dateisysteme, Dateiattribute, Dateifunktionen, Dateiorganisation</li>\n<li>Einführung in Unix</li>\n<li>Systemaufrufe, Shells und Utilities</li>\n</ul>"
                 },
                 {
                     "name": "Medizinische Bildverarbeitung",
@@ -106,7 +106,7 @@
                 {
                     "name": "Biometrie",
                     "english-name": "Statistics",
-                    "description": ""
+                    "description": "<ul>\n<li>Grundbegriffe der Wahrscheinlichkeitstheorie: Wahrscheinlichkeitsräume, bedingte Wahrscheinlichkeiten, stochastische Unabhängigkeit, diskrete und stetige Zufallsvariablen, zweidimensionale Zufallsvariablen</li>\n<li>Deskriptive Statistik: Merkmale, Skalenniveau von Daten, Darstellung von Messreihen, Maßzahlen für Ein- und Zweidimensionale Messreihen, lineare Regression, Korrelation</li>\n<li>Schließende Statistik: Statistisches Testen</li>\n<li>Anwendung der Statistik in der Medizin</li>\n</ul>"
                 },
                 {
                     "name": "Softwareprojekt",
