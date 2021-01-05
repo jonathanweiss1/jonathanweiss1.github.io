@@ -66,7 +66,7 @@
                 {
                     "name": "Software Engineering",
                     "english-name": "Software engineering",
-                    "description": ""
+                    "description": "<ul>\n<li>Agile Vorgehensmodelle: Iterationen, Disziplinen, Phasen</li>\n<li>Software-Engineering im Medizinprodukte-Umfeld: Lebenszyklusprozesse nach IEC 62 304</li>\n<li>Anforderungsanalyse: Use Cases, funktionale Anforderungsspezifikation, nichtfunktionale Anforderungen, Qualitätsmerkmale von Software</li>\n<li>Objektorientierte Analyse: Domänenmodellierung, Systemsequenzdiagramme, Aktivitäts- und Zustandsdiagramme</li>\n<li>Objektorientierter Entwurf: Notation, GRASP Pattern, GoF Pattern, Architektur-Pattern</li>\n<li>Testen: Testfallentwicklung, Testautomatisierung, Unit Testing, Testmetriken</li>\n<li>Projektinfrastruktur: Integrierte Entwicklungsumgebungen, Versionskontrolle, Konfigurationsmanagement</li>\n<ul>"
                 },
                 {
                     "name": "Algorithmen und Datenstrukturen",
@@ -76,12 +76,12 @@
                 {
                     "name": "Kommunikationssysteme",
                     "english-name": "Communication systems",
-                    "description": ""
+                    "description": "<ul>\n<li>Überblick über Computernetzwerke: Komponenten, Operation, Protokolle, Zeitlicher Ablauf der Datenübertragung, Netzwerkarchitekturmodelle (ISO-OSI, TCP/IP</li>\n<li>Anwendungsschicht: Kommunikation zwischen Prozessen, Dienste für Netzwerkanwendungen, Protokollablauf und Meldungsformat der Anwendungen (HTTP, FTP, E-mail, DNS)</li>\n<li>Transportschicht: Protokollarten (TCP, UDP), Meldungsformate, Ablauf, Überlastkontrolle, Analyse</li>\n<li>Netzwerkschicht: Netzwerkdienst-modell, Routing, Routing-algorithmen, hierarchisches Routing, Routing Tabellen, - Protokolle, Addressierung in TCP/IP Netzen, IPv4-Protokoll (Meldungsformat, Fragmentierung), Hilfsprotokolle, Subnetting, Einführung in IPv6</li>\n<li>Data Link Schicht: Dienste der Schicht, Techniken für Fehlerkorrekturen, gesicherte und ungesicherte Übertragungsprotokolle (Stop-and-Wait, Go back to N, Mehrfachzugriffsprotokolle, ARP-Protokoll), DL für LANS, Ethernet, Fast Ethernet, Gigabit-Ethernet, Wireless, Zugriffsverfahren (IEEE 802.11), Netzwerk-komponenten der DL (Bridge, Hub, Switches), VLAN-Konzept, DL für WAN</li>\n<li>Einführung in Kommunikationssicherheit: TLS, Firewalls, Virtuelle Private Netze</li>\n</ul>"
                 },
                 {
                     "name": "Physik",
                     "english-name": "Physics",
-                    "description": ""
+                    "description": "<ul>\n<li>Physikalische Messgrößen, Messfehlerbetrachtung</li>\n<li>Elektrizitätslehre: elektrische Größen, Gleichstromkreis, elektrisches Feld, Kondensator, Magnetfeld, Induktion, Wechselstromkreis</li>\n<li>Wellen (Licht, Schall): Interferenz, Beugung</li>\n<li>Optik: Reflexion und Brechung, Lupe, Mikroskop</li>\n</ul>"
                 }
             ]
         },
@@ -91,7 +91,7 @@
                 {
                     "name": "Datenbanken",
                     "english-name": "Databases",
-                    "description": ""
+                    "description": "<ul>\n<li>Relationenmodell: Integritätsregeln, Relationale Algebra, Entity-Relationship-Modell, Normalformen</li>\n<li>SQL: Datenbankzugriffssprache DML, Datenbankbeschreibungssprache DDL, Sichten, Schemata, Besonderheiten in speziellen Datenbanken</li>\n<li>Datenbankprogrammierung: Transaktionen, Zugriff auf Datenbanken mit geeigneten Programmiersprachen, Fehlerbehandlung</li>\n<li>Concurrency und Recovery von Datenbanken: Recovery, Log-Dateien, Checkpoints, Concurrency, Lockmechanismen, Deadlock</li>\n<li>Datenbankoptimierung: Optimierung der Zugriffe, Indexe</li>\n<li>Ausgewählte aktuelle Entwicklungen, XML, noSQL, Datenbanken in der Cloud</li>\n</ul>"
                 },
                 {
                     "name": "Betriebssysteme",
@@ -101,7 +101,7 @@
                 {
                     "name": "Medizinische Bildverarbeitung",
                     "english-name": "Medical Image Processing",
-                    "description": ""
+                    "description": "<ul>\n<li>Bildgebende Verfahren: Röntgen, CT, MRT, PET, Sonographie, Endoskopie</li>\n<li>Digitale Bilder: Diskretisierung, Bildeigenschaften, Histogrammmodifikation, Histogrammäquilisation</li>\n<li>Kantenerkennung und -glättung: Gradient, Faltung, Kantenfilter, Lineare Glättungsfilter, Medianfilter, Canny-Deriche-Kantendetektion, Zweite Ableitung, Unsharp Masking, Hough-Transformation</li>\n<li>Bild im Frequenzraum: Motivation Fouriertransformation, Basiswechsel, Komplexe Zahlen und periodische Basisfunktionen, Diskrete Fouriertransformation, Faltungstheorem, Filter im Frequenzraum</li>\n<li>Segmentierung: Kantenbasierte -, Pixelbasierte Segmentierung, Otsu-Schwellenwert, Region Growing, Wasserscheidentransformation, Aktive Konturmodelle, Levelset-Segmentierung</li>\n<li>Morphologie</li>\n<li>Bildregistrierung: Registrierungsmodule (Transformation, Resampling, Interpolation, Metrik, Optimierung)</li>\n</ul>"
                 },
                 {
                     "name": "Biometrie",
@@ -109,14 +109,14 @@
                     "description": "<ul>\n<li>Grundbegriffe der Wahrscheinlichkeitstheorie: Wahrscheinlichkeitsräume, bedingte Wahrscheinlichkeiten, stochastische Unabhängigkeit, diskrete und stetige Zufallsvariablen, zweidimensionale Zufallsvariablen</li>\n<li>Deskriptive Statistik: Merkmale, Skalenniveau von Daten, Darstellung von Messreihen, Maßzahlen für Ein- und Zweidimensionale Messreihen, lineare Regression, Korrelation</li>\n<li>Schließende Statistik: Statistisches Testen</li>\n<li>Anwendung der Statistik in der Medizin</li>\n</ul>"
                 },
                 {
-                    "name": "Softwareprojekt",
-                    "english-name": "Software project",
-                    "description": ""
+                    "name": "Softwarepraktikum",
+                    "english-name": "Practical Course in Software Design",
+                    "description": "<ul>\n<li>Softwareprojekt von Anforderungsspezifikation bis zu getestetem Code</li>\n<li>6er Team</li>\n<li>Thema: Managementtool für Sportgruppen</li>\n<li>Inkrementeller, iterativer Entwicklungsprozess</li>\n<li>Mehrere Reviews der Arbeitsresultate</li>\n<li>Präsentation</li>\n</ul>"
                 },
                 {
                     "name": "Medizinische Dokumentation",
                     "english-name": "Clinical Documentation",
-                    "description": ""
+                    "description": "<ul>\n<li>Aufgaben und Ziele der Medizinischen Dokumentation</li>\n<li>Medizinische Basisdokumentation an praktischen Beispielen</li>\n<li>Klinische Dokumentation an praktischen Beispielen</li>\n<li>Medico legale Dokumentation an praktischen Beispielen</li>\n<li>Qualitätssichernde Dokumentation an praktischen Beispielen</li>\n<li>Terminologien / Ontologien (ICD-10, OPS, SNOMED-CT, LOINC, UMLS)</li>\n<li>Standards für die integration von Wissensbasen (Guidelines, Literatur-Datenbank) in klinischer Anwendungssoftware, IT-Unterstützung bei der Dokumentation medizinischen Handelns</li>\n</ul>"
                 }
             ]
         },
@@ -125,8 +125,8 @@
             "courses": [
                 {
                     "name": "Medizinrecht",
-                    "english-name": "Medical Law",
-                    "description": ""
+                    "english-name": "Regulations and Legal Affairs",
+                    "description": "<ul>\n<li>Grundlagen des Medizinrechts</li>\n<li>Heilkunde</li>\n<li>Strafrechtliche Haftung</li>\n<li>Zivilrechtliche Haftung</li>\n<li>Schweigepflicht des Arztes</li>\n<li>Medizinische Dokumentation</li>\n<li>Datenschutz in der Medizin</li>\n<li>Medizinprodukte</li>\n<li>Betäubungsmittel</li>\n</ul>"
                 },
                 {
                     "name": "Praktikum",
