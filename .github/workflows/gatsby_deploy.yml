@@ -14,3 +14,4 @@ jobs:
         with:
           access-token: ${{ secrets.GATSBY_PUBLISH }}
           git-config-name: gatsby-publish-action
+          deploy-branch: gh-pages
