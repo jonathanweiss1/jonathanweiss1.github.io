@@ -1,6 +1,6 @@
 import React from 'react'
-import SiteLayout from "../components/siteLayout.js"
-import ContactPage from "../components/ContactPage.js"
+import SiteLayout from "../components/sitelayout"
+import ContactPage from "../components/contactpage"
 
 const Contact = () => {
     return (

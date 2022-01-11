@@ -1,7 +1,7 @@
 import React from 'react'
-import SiteLayout from "../components/siteLayout.js"
-import Header from "../components/header.js"
-import Blog from "../components/blog/index.js"
+import SiteLayout from "../components/sitelayout"
+import Header from "../components/header"
+import Blog from "../components/blog/index"
 
 const Home = () => {
   return(
