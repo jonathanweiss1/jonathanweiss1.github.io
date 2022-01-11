@@ -22,8 +22,8 @@ const SiteLayout = ({children}) => {
         <div className="application">
             <script src="../path/to/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
             <div>
-                <nav className="flex sm:justify-between  justify-around items-center bg-gray-50 lg:px-20 sm:px-6 py-8 text-gray-100">
-                    <h3 className={logoStyle}>jonathanweiss1</h3>
+                <nav className="flex sm:justify-between border-b-8 border-double justify-around items-center bg-gray-50 lg:px-20 sm:px-6 py-4 text-gray-100">
+                    <h3 className={logoStyle}>jonathanweiss</h3>
                     <ul className="flex">
                         <li className={linkStyle}><Link to="/">Home</Link></li>
                         <li className={linkStyle}><Link to="/contact">Contact</Link></li>
