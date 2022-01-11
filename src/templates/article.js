@@ -1,6 +1,6 @@
 import React from "react"
 import {graphql} from "gatsby"
-import SiteLayout from "../components/SiteLayout"
+import SiteLayout from "../components/siteLayout"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const Article = ({data}) => {
