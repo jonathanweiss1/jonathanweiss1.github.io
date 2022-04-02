@@ -1,44 +1,27 @@
 import React from 'react';
 import {Link} from 'gatsby';
+import NavBar from "../components/navbarnew"
 
 const SiteLayout = ({children}) => {
-    const linkStyle = `
-        Hover:opacity-70
-        text-sm
-        sm:text-lg
-        lg:px-20
-        sm:px-10
-        px-2
-    `
+  const logoStyle = `
+      text-white
+      font-radley
+      sm:text-base
+      text-sm
+  `
 
-    const logoStyle = `
-        text-white
-        font-radley
-        sm:text-base
-        text-sm
-    `
-
-    return (
-        <div className="application">
-            <script src="../path/to/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
-            <div>
-                <nav className="flex sm:justify-between border-b-8 border-double justify-around items-center bg-gray-50 lg:px-20 sm:px-6 py-4 text-gray-100">
-                    <h3 className={logoStyle}>jonathanweiss</h3>
-                    <ul className="flex">
-                        <li className={linkStyle}><Link to="/">Home</Link></li>
-                        <li className={linkStyle}><Link to="/contact">Contact</Link></li>
-                        <li className={linkStyle}><Link to="/about">About</Link></li>
-                    </ul>
-                </nav>
-
-                <main>{children}</main>
-
-                <footer className="text-center py-8 bg-green-900 text-gray-100">
-                    <p>Copyright 2030 <span  className={logoStyle}>HealthRoom</span></p>
-                </footer>
-            </div>
-        </div>
-    )
+  return (
+      <div className="application">
+          <script src="../path/to/@themesberg/flowbite/dist/flowbite.bundle.js"></script>
+          <div>
+              <NavBar></NavBar>
+              <main>{children}</main>
+              <footer className="text-center py-4 bg-gray-50 text-black">
+                  <p>Copyright 2022 Jonathan Weiß</p>
+              </footer>
+          </div>
+      </div>
+  )
 }
 
 export default SiteLayout
