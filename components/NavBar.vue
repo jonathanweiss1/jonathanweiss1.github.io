@@ -129,6 +129,7 @@ export default {
     let items: { route: String; title: String }[] = [
       { route: "/", title: "Home" },
       { route: "/impressum", title: "Impressum" },
+      { route: "/data-protection", title: "Data Protection" },
     ];
     return {
       isOpen: false,
