@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed w-full p-6 bg-transparent">
+  <nav class="fixed w-full p-4 mb-3 bg-slate-100 shadow-md rounded-b-lg">
     <div class="flex items-center justify-between">
       <!-- Header logo -->
       <NuxtLink to="/">
@@ -106,6 +106,7 @@
       </aside>
     </div>
   </nav>
+  <div class="py-8"></div>
 </template>
 
 <script setup lang="ts">

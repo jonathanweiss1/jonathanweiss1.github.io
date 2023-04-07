@@ -1,4 +1,6 @@
-# Impressum
+---
+title: Impressum
+---
 
 ## Information according to §5 TMG
 

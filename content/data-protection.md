@@ -1,4 +1,7 @@
-# Data Protection
+---
+title: Data Protection
+---
+
 ## 1. Data protection at a glance
 ### General information
 The following notices provide a simple overview of what happens to your personal data when you visit this website.

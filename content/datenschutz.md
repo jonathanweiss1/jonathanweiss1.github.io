@@ -1,3 +1,7 @@
+---
+title: Datenschutz
+---
+
 ## 1. Datenschutz auf einen Blick
         <h3>Allgemeine Hinweise</h3>
         <p>
