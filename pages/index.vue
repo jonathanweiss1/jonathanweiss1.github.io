@@ -10,8 +10,8 @@
           <div class="w-full flex justify-center">
             <nuxt-img :src="article.image" class="h-52" />
           </div>
-          <h2 class="-mb-1">{{ article.title }}</h2>
-          <p class="text-justify">{{ article.description }}</p>
+          <h2 class="">{{ article.title }}</h2>
+          <p class="text-justify leading-normal">{{ article.description }}</p>
         </NuxtLink></ContentList
       >
     </article>

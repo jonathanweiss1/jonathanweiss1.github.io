@@ -60,7 +60,7 @@
 
       <!-- Drawer Menu -->
       <aside
-        class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
+        class="p-5 transform top-0 left-0 w-64 bg-slate-100 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 text-gray-900"
         :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
       >
         <div class="close">
@@ -119,7 +119,7 @@ function indicatorClassesNavBar(route: String): String {
 }
 function indicatorClassesDropdown(route: String): String {
   if (route == currentRoute.fullPath)
-    return "text-blue-500 font-extrabold bg-blue-100";
+    return "text-slate-500 font-extrabold bg-slate-200";
   else return "";
 }
 </script>
