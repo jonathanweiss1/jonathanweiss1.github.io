@@ -1,3 +1,7 @@
 <template>
-  <h1 class="font-black text-lg text-blue-500 border-2 border-orange-500 px-2 rounded-full">Jonathan Weiß</h1>
+  <h1
+    class="font-light text-lg tracking-wide text-slate-500 bg-slate-200 shadow-md px-2 rounded-lg"
+  >
+    Jonathan Weiß
+  </h1>
 </template>
