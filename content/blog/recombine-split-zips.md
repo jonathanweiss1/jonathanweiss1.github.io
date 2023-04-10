@@ -2,7 +2,7 @@
 title: How to recombine split zip folders
 slug:  recombine-split-zip-folders
 tag: files, programming, how-to
-image: images/zip.png
+image: /images/zip.png
 ---
 
 This short post shows how split zip files can be recombined so that you can extract the content. 
