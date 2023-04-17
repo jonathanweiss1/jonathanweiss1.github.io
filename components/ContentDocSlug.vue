@@ -3,7 +3,7 @@
     <article class="prose prose-slate p-16 max-w-3xl m-auto">
       <ContentDoc>
         <template v-slot="{ doc }">
-            <div v-if="doc.image"><img :src="doc.image" class="h-44" /></div>
+            <div v-if="doc.image"><nuxt-img :src="doc.image" class="h-44"></nuxt-img></div>
           <h1>{{ doc.title }}</h1>
           <ContentRenderer :value="doc" />
         </template>

@@ -2,7 +2,7 @@
 title: Fix git credential manager wrong username
 slug:  git-credential-manager-uses-wrong-username
 tag: git, programming, how-to
-image: /images/git.png
+image: images/git.png
 ---
 
 GitHub is the version control system of choice for many programmers. When working with multiple GitHub accounts on the same device, i recently ran into an issue where git tried to use the wrong user account while trying to push to GitHub.
