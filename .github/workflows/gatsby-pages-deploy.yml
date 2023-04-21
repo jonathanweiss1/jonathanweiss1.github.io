@@ -1,0 +1,46 @@
+name: Gatsby Deploy to Github Pages
+run-name: ${{ github.actor }} is deploying gatsby to github pages
+on: [push]
+jobs: 
+  Build-Gatsby:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout public branch # checkout public  branch
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: remove all files # remove files.
+        run: |
+          rm -rf *
+      - name: checkout master branch #checkout master  branch into temp folder.
+        uses: actions/checkout@v2
+        with:
+          ref: master
+          path: temp
+          persist-credentials: false
+
+      - name: run yarn install and build # go to temp folder and run npm build to create files.
+        run: |
+          cd temp
+          yarn install
+          yarn build
+      - name: move files # move the public built files into root dir and remove others.
+        if: ${{ success() }}
+        run: |
+          mv temp/public/* ./
+          rm -rf temp
+      - name: Commit files for change # commit
+        if: ${{ success() }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Deploy build"
+      - name: Push changes #push files into master branch
+        if: ${{ success() }}
+        uses: ad-m/github-push-action@master
+        with:
+          BRANCH: public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
