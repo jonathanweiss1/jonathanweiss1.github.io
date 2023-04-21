@@ -21,7 +21,7 @@ jobs:
 
       - name: run yarn install and build # go to temp folder and run npm build to create files.
         working-directory: ./temp/personal_site
-        run: 
+        run: |
           npm i
           npm run build
       - name: move files # move the public built files into root dir and remove others.
