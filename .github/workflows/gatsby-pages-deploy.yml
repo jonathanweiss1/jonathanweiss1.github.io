@@ -19,12 +19,10 @@ jobs:
           path: temp
           persist-credentials: false
 
-      - name: go to temp # go to temp folder and run npm build to create files.
-        run: cd temp
-      - name: yarn install
-        run: yarn install
-      - name: yarn build
-        run: yarn build
+      - name: run yarn install and build # go to temp folder and run npm build to create files.
+        run: |
+          yarn --cwd ./temp/ install
+          yarn --cwd ./temp/ build
       - name: move files # move the public built files into root dir and remove others.
         if: ${{ success() }}
         run: |
