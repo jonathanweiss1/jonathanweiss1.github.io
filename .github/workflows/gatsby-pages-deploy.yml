@@ -20,14 +20,14 @@ jobs:
           persist-credentials: false
 
       - name: run yarn install and build # go to temp folder and run npm build to create files.
-        working-directory: ./temp
+        working-directory: ./temp/personal_site
         run: 
           npm i
           npm run build
       - name: move files # move the public built files into root dir and remove others.
         if: ${{ success() }}
         run: |
-          mv temp/public/* ./
+          mv temp/personal_site/public/* ./
           rm -rf temp
       - name: Commit files for change # commit
         if: ${{ success() }}
