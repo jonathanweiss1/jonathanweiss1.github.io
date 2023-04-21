@@ -11,8 +11,7 @@ jobs:
           persist-credentials: false
 
       - name: remove all files # remove files.
-        run: |
-          rm -rf *
+        run: rm -rf *
       - name: checkout master branch #checkout master  branch into temp folder.
         uses: actions/checkout@v2
         with:
@@ -20,11 +19,12 @@ jobs:
           path: temp
           persist-credentials: false
 
-      - name: run yarn install and build # go to temp folder and run npm build to create files.
-        run: |
-          cd temp
-          yarn install
-          yarn build
+      - name: go to temp # go to temp folder and run npm build to create files.
+        run: cd temp
+      - name: yarn install
+        run: yarn install
+      - name: yarn build
+        run: yarn build
       - name: move files # move the public built files into root dir and remove others.
         if: ${{ success() }}
         run: |
