@@ -23,7 +23,7 @@ jobs:
         run: |
           cd ./temp
           npm ci
-          npm run build
+          gatsby build
       - name: move files # move the public built files into root dir and remove others.
         if: ${{ success() }}
         run: |
