@@ -1,16 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
+import type { GatsbyConfig } from "gatsby";
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-
-const siteUrl = process.env.URL || `https:/jonathanweiss1.github.io`
-
-module.exports = {
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Jonathan's Homepage`,
     description: `Jonathan is a Computer Science Student with a focus on image processing in medical applications.`,
@@ -58,8 +48,15 @@ module.exports = {
     `gatsby-plugin-typescript`,
     `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby-plugin-sitemap`, 
-      excludes: [`https://jonathanweiss1.github.io/using-ssr/`, `https://jonathanweiss1.github.io/using-typescript/`]
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: [
+          `https://jonathanweiss1.github.io/using-ssr/`, 
+          `https://jonathanweiss1.github.io/using-typescript/`
+        ]
+      }
     }
   ],
-}
+};
+
+export default config;
