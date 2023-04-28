@@ -7,12 +7,15 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+const siteUrl = process.env.URL || `https:/jonathanweiss1.github.io`
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Jonathan's Homepage`,
+    description: `Jonathan is a Computer Science Student with a focus on image processing in medical applications.`,
+    author: `Jonathan Weiß`,
+    siteUrl: `https://jonathanweiss1.github.io/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -22,6 +25,19 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content_md`,
+        path: `${__dirname}/src/content_md`
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!--more-->`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -39,5 +55,11 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-typescript`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-sitemap`, 
+      excludes: [`https://jonathanweiss1.github.io/using-ssr/`, `https://jonathanweiss1.github.io/using-typescript/`]
+    }
   ],
 }
