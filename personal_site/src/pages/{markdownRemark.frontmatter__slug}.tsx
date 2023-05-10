@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 export default function BlogPostTemplate({
   data, // this prop will be injected by the GraphQL query below.
-}) {
+}: {data:any}) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (

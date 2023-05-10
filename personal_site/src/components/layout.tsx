@@ -7,24 +7,20 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import NavBar from "./navbar"
 
-import Header from "./header"
-import "./layout.css"
-
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
+const Layout = ({ children }: { children:any }) => {
+  const data: any = useStaticQuery(graphql`
+    query SiteRouteQuery {
+      sitePage {
+        path
       }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <NavBar currentRoute={data.sitePage.path}/>
       <div>
         <main>{children}</main>
       </div>
