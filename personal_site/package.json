@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@deckdeckgo/highlight-code": "^4.4.0",
+    "@deckdeckgo/highlight-code": "^3.6.0",
     "@fontsource-variable/crimson-pro": "^5.0.6",
     "@mdx-js/react": "^2.3.0",
     "autoprefixer": "^10.4.14",
