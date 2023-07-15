@@ -15,7 +15,30 @@ const config: GatsbyConfig = {
     "gatsby-plugin-postcss",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-classes",
+            options: {
+              classMap: {
+                "heading[depth=1]": "text-2xl",
+                "heading[depth=2]": "text-2xl",
+                paragraph: "mb-6",
+                inlineCode: "bg-slate-200 text-slate-600 px-2 py-1 rounded-md"
+              }
+            }
+          },
+          {
+            resolve: "gatsby-remark-highlight-code"
+          },
+          {
+            resolve: "gatsby-remark-code-buttons"
+          }
+        ]
+      }
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",

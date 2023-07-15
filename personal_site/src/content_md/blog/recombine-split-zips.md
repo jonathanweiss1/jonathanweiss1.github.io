@@ -2,7 +2,9 @@
 title: How to recombine split zip folders
 slug:  "/blog/recombine-split-zip-folders"
 tag: files, programming, how-to
-image: images/zip.png
+image: blog/zip.png
+alt: "An icon resembling a folder with a zipper."
+date: 26.06.2023
 ---
 
 This short post shows how split zip files can be recombined so that you can extract the content. 
@@ -20,10 +22,10 @@ Navigate to the folder where your zip is located. The files should look somethin
 
 If you are on windows and the files are located on a local drive, use:
 
-```copy /b data.zip.001+data.zip.002+data.zip+003 data.zip```
+`copy /b data.zip.001+data.zip.002+data.zip+003 data.zip`
 to join them.
 
 If the files are located on a remote drive, use:
-``` copy /b /z data.zip.001+data.zip.002+data.zip+003 data.zip```
+`copy /b /z data.zip.001+data.zip.002+data.zip+003 data.zip`
 
 Header image created by Smashicons on [Flaticon](https://www.flaticon.com/free-icons/zip-format).

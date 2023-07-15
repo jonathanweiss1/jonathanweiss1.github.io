@@ -22,7 +22,7 @@ const NavBar = ({ currentRoute }: { currentRoute: string }) => {
   ]
   return (
     <div>
-      <nav className="fixed w-full p-4 mb-3 bg-slate-100 shadow-md rounded-b-lg">
+      <nav className="fixed w-full p-4 mb-3 bg-slate-100 shadow-md rounded-b-lg z-50">
         <div className="flex items-center justify-between">
           <Link to="/">
             <Logo />
@@ -64,7 +64,7 @@ const NavBar = ({ currentRoute }: { currentRoute: string }) => {
           {/* Drawer menu */}
           <aside
             className={
-              "p-5 transform top-0 left-0 w-64 bg-slate-100 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30 text-gray-900 " +
+              "p-5 transform top-0 left-0 w-64 bg-slate-100 fixed h-full overflow-auto ease-in-out transition-all duration-300 z-50 text-gray-900 " +
               (isOpen ? "translate-x-0" : "-translate-x-full")
             }
           >
