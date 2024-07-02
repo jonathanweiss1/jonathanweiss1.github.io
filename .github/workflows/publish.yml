@@ -23,6 +23,9 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
+      - name: Change directory
+        run: cd personal_site
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -46,14 +49,6 @@ jobs:
         with:
           node-version: "lts/*"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-
-      # - name: Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧
-      #   uses: ./.github/workflows/setup-node
-
-      # - name: Setup Pages ⚙️
-      #   uses: actions/configure-pages@v4
-      #   with:
-      #     static_site_generator: next
 
       - name: Restore cache
         uses: actions/cache@v4
