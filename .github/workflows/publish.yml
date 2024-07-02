@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Change directory
-        run: cd personal_site
+        run: cd ./personal_site
 
       - name: Detect package manager
         id: detect-package-manager
