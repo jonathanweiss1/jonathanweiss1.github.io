@@ -4,7 +4,7 @@ on:
     branches:
       - master
   repository_dispatch:
-    	types: [publish-event]
+    types: [publish-event]
 
   workflow_dispatch:
 
