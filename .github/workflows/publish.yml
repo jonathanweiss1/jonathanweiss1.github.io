@@ -37,6 +37,9 @@ jobs:
           persist-credentials: false
 
       - name: run npm install and build 🏗️ # go to temp folder and run npm build to create files.
+        env: # Or as an environment variable
+          CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.CONTENTFUL_DELIVERY_TOKEN }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
         working-directory: ./temp/personal_site
         run: |
           npm i
