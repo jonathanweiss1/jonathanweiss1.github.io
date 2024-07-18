@@ -1,4 +1,4 @@
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
 import * as React from "react"
 
 interface ArticlePreviewInterface {
@@ -11,7 +11,7 @@ interface ArticlePreviewInterface {
 const ArticlePreview = ({ title, excerpt, image, alt } : ArticlePreviewInterface) => {
   return (
     <div className="m-2 rounded-xl overflow-hidden relative h-3/4 flex flex-col">
-        <GatsbyImage alt={alt} image={image} className="h-full"></GatsbyImage>
+        {/* <GatsbyImage alt={alt} image={image} className="h-full"></GatsbyImage> */}
         <a className="font-bold font-crimson text-3xl">{title}</a>
         <a>{excerpt}</a>
     </div>
