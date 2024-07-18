@@ -1,8 +1,8 @@
 "use client";
 
 import * as React from "react"
-import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
-deckDeckGoHighlightElement()
+// import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
+// deckDeckGoHighlightElement()
 import NavBar from "@/components/navbar"
 import { usePathname } from 'next/navigation'
 

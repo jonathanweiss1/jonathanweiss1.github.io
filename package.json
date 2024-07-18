@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@deckdeckgo/highlight-code": "^4.4.0",
     "contentful": "^10.12.8"
   }
 }
