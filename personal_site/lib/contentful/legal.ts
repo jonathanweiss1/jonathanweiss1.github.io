@@ -22,7 +22,7 @@ export async function fetchLegalPages() {
     return pages.data.legalPageCollection.items;
 }
 
-export async function getLegalPage(slug: string) {
+export async function getLegalPage(slug: string, locale: string) {
   const legal = await fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
      {
@@ -32,7 +32,7 @@ export async function getLegalPage(slug: string) {
          "Authorization": `Bearer ${process.env.CONTENTFUL_DELIVERY_TOKEN}`,
        },
        body: JSON.stringify({ query: `query {
-            legalPageCollection(where:{slug: "${slug}"}) {
+            legalPageCollection(locale: "${locale}", where:{slug: "${slug}"}) {
             items {
               title
               slug

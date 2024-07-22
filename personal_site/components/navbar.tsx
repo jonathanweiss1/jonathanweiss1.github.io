@@ -4,14 +4,17 @@ import * as React from "react"
 import Logo from "./logo"
 import { useState } from "react"
 import Link from "next/link";
+import { LocaleSwitch } from "./localeSwitch";
+import { getCurrentLocale, getLinkToLocale } from "@/lib/locale";
 
 const NavBar = ({ currentRoute }: { currentRoute: string }) => {
   const drawer = () => {
     setDrawerState(!isOpen);
   }
   const [isOpen, setDrawerState] = useState(false);
+  const currentLocale = getCurrentLocale(currentRoute);
   const currentRouteIndicator = (route: String) => {
-    if (route == currentRoute)
+    if (route == currentRoute || `/de${route}` === currentRoute || (currentRoute === "/de" && route === "/"))
       return "bg-navbar-indicator"
     else return ""
   }
@@ -22,7 +25,7 @@ const NavBar = ({ currentRoute }: { currentRoute: string }) => {
     <div>
       <nav className="fixed w-full p-4 mb-3 bg-navbar-bg shadow-md rounded-b-lg z-50">
         <div className="flex items-center justify-between">
-          <Link href="/">
+          <Link href={getLinkToLocale("/", currentLocale, currentLocale)}>
             <Logo />
           </Link>
           {/* Mobile toggle */}
@@ -44,10 +47,11 @@ const NavBar = ({ currentRoute }: { currentRoute: string }) => {
           {/* Navbar */}
           <div className="hidden md:block">
             <ul className="flex space-x-8 text-sm font-sans">
+              <LocaleSwitch />
               {items.map(item => (
                 <li key={item.route}>
                   <Link
-                    href={item.route}
+                    href={getLinkToLocale(item.route, currentLocale, currentLocale)}
                   >
                     {item.title}
                   </Link>
@@ -93,7 +97,7 @@ const NavBar = ({ currentRoute }: { currentRoute: string }) => {
               }}
               className="flex w-full items-center p-4 border-b"
             >
-              <Link href="/">
+              <Link href={getLinkToLocale("/", currentLocale, currentLocale)}>
                 <Logo />
               </Link>
             </span>
@@ -101,7 +105,7 @@ const NavBar = ({ currentRoute }: { currentRoute: string }) => {
               {items.map(item => (
                 <li key={item.route}>
                   <Link
-                    href={item.route}
+                    href={getLinkToLocale(item.route, currentLocale, currentLocale)}
                     className={
                       "p-4 inline-block flex"
                     }
@@ -115,6 +119,7 @@ const NavBar = ({ currentRoute }: { currentRoute: string }) => {
                 </li>
               ))}
             </ul>
+            <LocaleSwitch />
           </aside>
         </div>
       </nav>
