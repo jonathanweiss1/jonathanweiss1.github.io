@@ -5,6 +5,7 @@ import * as React from "react"
 // deckDeckGoHighlightElement()
 import NavBar from "@/components/navbar"
 import { usePathname } from 'next/navigation'
+import { Footer } from "@/components/footer";
 
 const Layout = ({ children }: { children: any }) => {
   const currentRoute = usePathname()
@@ -14,6 +15,7 @@ const Layout = ({ children }: { children: any }) => {
       <div className="">
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   )
 }

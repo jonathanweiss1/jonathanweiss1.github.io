@@ -22,7 +22,12 @@ const config: Config = {
         },
 
         logobg: '#2003FA',
-        logofg: '#FFFFFF'
+        logofg: '#FFFFFF',
+
+        footer: {
+          bg: '#1E3231',
+          text: '#FFFFFF',
+        }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
