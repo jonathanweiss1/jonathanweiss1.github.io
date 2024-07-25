@@ -21,7 +21,7 @@ export function Footer() {
     <div className="mt-10 py-6 px-5 lg:px-52 w-full bg-footer-bg text-footer-text grid grid-cols-1 lg:grid-cols-3 gap-3">
         {/* legal links */}
         <div className="grid-cols-subgrid gap-3">
-            {navigation.footer.legal.map((item : { name: { en: string, de: string }, url: string }) => <div><Link className="underline" href={getLinkToLocale(item.url, currentLocale, currentLocale)} key={item.name.en}>{getNameInCurrentLocale(item.name, currentLocale)}</Link></div>)}
+            {navigation.footer.legal.map((item : { name: { en: string, de: string }, url: string }) => <div key={item.name.en}><Link className="underline" href={getLinkToLocale(item.url, currentLocale, currentLocale)}>{getNameInCurrentLocale(item.name, currentLocale)}</Link></div>)}
         </div>
         { /* something else in the future */ }
         <div className="grid-cols-subgrid">
