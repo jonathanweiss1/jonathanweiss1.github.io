@@ -22,6 +22,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId={`${process.env.GTM_ID}`} />
       <body className={inter.className}>
         {/* <CookieBanner /> */}
+        <div>{`${process.env.GTM_ID}`}</div>
         <Layout>
           {children}
         </Layout>
