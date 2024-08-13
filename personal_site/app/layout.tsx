@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout";
+import { CookieBanner } from "@/components/cookieBanner"
+import { GoogleTagManager } from "@next/third-parties/google"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId={`${process.env.GTM_ID}`} />
       <body className={inter.className}>
+        <CookieBanner />
         <Layout>
           {children}
         </Layout>
