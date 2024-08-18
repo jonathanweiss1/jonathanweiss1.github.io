@@ -55,7 +55,7 @@ export function CookieBanner() {
         }
     }, []);
     if (consent === null) {
-        return <div className="bg-black fixed z-[100] bg-opacity-75 w-screen h-screen grid">
+        return <div className="bg-black fixed z-[100] bg-opacity-75 w-screen h-screen grid dark:text-black">
             <div className="h-fit w-4/5 max-w-[32rem] bg-background p-10 rounded mx-auto my-auto">
                 <h3>{texts['heading']}</h3>
                 <div className="flex justify-end w-full gap-2 mt-4">
