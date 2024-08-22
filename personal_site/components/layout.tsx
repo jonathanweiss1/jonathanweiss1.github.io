@@ -17,7 +17,9 @@ const Layout = ({ children }: { children: any }) => {
       <div className="mt-20">
         <main>{children}</main>
       </div>
-      <Footer />
+      <div className="self-end">
+        <Footer />
+      </div>
     </>
   )
 }
