@@ -11,8 +11,10 @@ const Layout = ({ children }: { children: any }) => {
   const currentRoute = usePathname()
   return (
     <>
-      <NavBar currentRoute={currentRoute} />
-      <div className="">
+      <div className="absolute top-0">
+        <NavBar currentRoute={currentRoute} />
+      </div>
+      <div className="mt-20">
         <main>{children}</main>
       </div>
       <Footer />

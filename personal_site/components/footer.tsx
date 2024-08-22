@@ -3,8 +3,6 @@ import { getCurrentLocale, getLinkToLocale } from '@/lib/locale';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { consentSettings } from './cookieBanner';
-import { useEffect } from 'react';
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 
 /**
  * Selects the correct language from the given object
