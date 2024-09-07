@@ -36,6 +36,14 @@ export async function fetchTutorialPagesPreview(locale: string) {
                   title
                   slug
                   previewText
+                  headerImage {
+                    url
+                    fileName
+                    description
+                    width
+                    height
+                    contentType
+                  }
                   }
               }
           }` }),
@@ -60,6 +68,13 @@ export async function getTutorialPage(slug: string, locale: string) {
               items {
                 title
                 slug
+                headerImage {
+                  url
+                  fileName
+                  description
+                  width
+                  height
+                }
                 content {
                   json
                 }

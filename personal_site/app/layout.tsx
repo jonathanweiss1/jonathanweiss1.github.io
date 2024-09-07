@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout";
 import { GoogleTagManager, sendGTMEvent } from "@next/third-parties/google"
 import { CookieBanner } from "@/components/cookieBanner";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jonathan Weiß",
@@ -20,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleTagManager gtmId={`${process.env.GTM_ID}`}  />
-      <body className={`${inter.className} min-h-screen h-full grid grid-col-1 items-start`}>
+      <body className={` min-h-screen h-full grid grid-col-1 items-start`}>
         <CookieBanner />
         <Layout>
           {children}
