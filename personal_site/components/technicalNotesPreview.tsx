@@ -9,7 +9,6 @@ export function TechnicalNotesPreview({ slug, title, text, image }: { slug: stri
     const currentRoute = usePathname();
     const currentLocale = getCurrentLocale(currentRoute);
     const readMore = currentLocale === 'en' ? 'Read more' : 'Weiterlesen';
-    console.log(title, image);
     return <div className="flex flex-row bg-background m-4 p-4 rounded gap-3">
         <div className="w-1/5">
         <Image className="rounded object-contain" sizes="10vw" src={image.url} alt={image.description} width={image.width} height={image.height} />
