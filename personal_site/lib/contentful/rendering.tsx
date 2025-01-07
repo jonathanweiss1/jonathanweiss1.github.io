@@ -19,7 +19,7 @@ export async function getRichTextFormattingOptions(locale: string) {
             },
             [BLOCKS.LIST_ITEM]: (node: any, children: any) => {
                 return (
-                    <li className="list-item group-[.list-none]:marker:[content:'-'] [counter-increment:listnumber] group-[.unordered]:marker:[content:counters(listnumber,'.')] marker:text-accent px-4">{children}</li>
+                    <li className="list-item group-[.list-none]:marker:[content:'-'] [counter-increment:listnumber] group-[.ordered]:marker:[content:counters(listnumber,'.')] marker:text-accent px-4">{children}</li>
                     // <li className="my-3 before:content-['Test']">
                     //     <div className="flex flex-row items-center group-[.list-decimal]:hidden">
                     //         <div className="w-2 h-px mr-2 bg-accent"></div>
@@ -73,7 +73,7 @@ export async function getRichTextFormattingOptions(locale: string) {
             },
             [BLOCKS.OL_LIST]: (node: any, children: any) => {
                 return (
-                    <ol className="unordered [counter-reset:listnumber] group">{children}</ol>
+                    <ol className="ordered [counter-reset:listnumber] group">{children}</ol>
                 )
             },
             [BLOCKS.QUOTE]: (node: any, children: any) => {

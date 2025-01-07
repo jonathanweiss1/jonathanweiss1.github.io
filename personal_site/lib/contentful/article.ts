@@ -1,4 +1,4 @@
-export async function fetchTutorialPages() {
+export async function fetchArticlePages() {
     const pages = await fetch(
         `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
          {
@@ -21,7 +21,7 @@ export async function fetchTutorialPages() {
     return pages.data.tutorialCollection.items;
 }
 
-export async function fetchTutorialPagesPreview(locale: string) {
+export async function fetchArticlePagesPreview(locale: string) {
   const pages = await fetch(
       `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
        {
@@ -54,7 +54,7 @@ export async function fetchTutorialPagesPreview(locale: string) {
   return pages.data.tutorialCollection.items;
 }
 
-export async function getTutorialPage(slug: string, locale: string) {
+export async function getArticlePage(slug: string, locale: string) {
     const tutorial = await fetch(
       `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
        {
